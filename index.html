@@ -21,6 +21,8 @@
 		
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		
 
 </head>
 <body>
@@ -30,16 +32,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-				<img class="header_img" src="img/logo.png" alt="Здесь должно быть лого">
+				<img class="header_img wow fadeInLeftBig" src="img/logo.png" alt="Монитор">
 			</div>
 			<div class="col-lg-5">
-				<p class="header_pretitle">Веб-разработчик</p>
-				<h1 class="heade_titile">Артем Исламов</h1>
-				<p class="header_subtitle">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
-				<div class="header_button_block">
-					<a href="https://youtu.be/rW6Km0k1Exk" target="_blank" class="header_buttom">Связаться</a>
-					<small>*Это бесплатно</small>
-				</div>
+				<div class="center_block">
+					<p class="header_pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="heade_titile wow fadeInRightBig" data-wow-delay="0.2s"> Alex Nabokov</h1>
+					<p class="header_subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
+					<div class="header_button_block">
+						<a href="https://youtu.be/rW6Km0k1Exk" target="_blank" class="header_buttom">Связаться</a>
+						<small>*Это бесплатно</small>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -53,7 +57,7 @@
 			<div class="row">
 
 				<div class="col-md-6">
-					<div class="portfolio_col_1">
+					<div class="portfolio_col_1 wow pulse " data-wow-delay="0.2s">
 						<img src="img/portfolio-logo-1.png" alt="портфолио1">
 						<h3 class="head_text_port">внутренний университет «Газпром нефти»
 						</h3>
@@ -63,7 +67,7 @@
 				</div>
 					
 				<div class="col-md-6">
-					<div class="portfolio_col_2">
+					<div class="portfolio_col_2 wow pulse " data-wow-delay="0.2s">
 						<img src="img/portfolio-img-2.png" alt="портфолио1">
 						<h3 class="head_text_port">Сайт платежной системы «Мир»
 						</h3>
@@ -88,10 +92,14 @@
 			<div class="col-md-4">
 				<div class="social_block">
 					<p>Подпишитесь:</p>
-					<a href="https://uk-ua.facebook.com/"><img src="img/facebook-logo-button.png" alt="Feacbook"></a>
-					<a href="https://vk.com/"><img src="img/vk-social-logotype.png" alt="VK"></a>
-					<a href="https://telegram.org/"><img src="img/telegram-symbol.png" alt="Telegram"></a>
-					<a href="https://youtube.com/"><img src="img/youtube-symbol.png" alt="Youtybe"></a>
+
+					<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://uk-ua.facebook.com/" ><img src="img/facebook-logo-button.png" alt="Feacbook"></a>
+
+					<a class="wow bounceInDown" data-wow-delay="0.2s" href="https://vk.com/"><img src="img/vk-social-logotype.png" alt="VK"></a>
+
+					<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://telegram.org/"><img src="img/telegram-symbol.png" alt="Telegram"></a>
+
+					<a class="wow bounceInDown" data-wow-delay="0.4s" href="https://youtube.com/"><img src="img/youtube-symbol.png" alt="Youtybe"></a>
 				</div>
 			</div>
 
@@ -106,6 +114,10 @@
 	</div>
 </footer>
 
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 </body>
 </html>
